@@ -162,3 +162,9 @@ variable "protect_cluster_instances_from_scale_in" {
   type        = string
   default     = "no"
 }
+
+variable "target_group_arns" {
+  description = "A list of Target Group ARNs to associate with the ASG."
+  type = list(string)
+  default = []
+}
